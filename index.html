@@ -1,24 +1,315 @@
 <!doctype html>
 <html lang="en">
   <head>
+    <!-- ============================================ -->
+    <!-- BASIC META TAGS                               -->
+    <!-- ============================================ -->
     <meta charset="UTF-8" />
-
-    <!-- Primary Favicon  public-->
-    <link rel="icon" type="image/x-icon" href="/favicon.ico">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     
-    <!-- Apple Touch Icon (for iOS) -->
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <!-- ============================================ -->
+    <!-- TITLE & DESCRIPTION (SEO & AEO Critical)     -->
+    <!-- ============================================ -->
+    <title>CEOL </title>
+    <meta name="title" content="CEOL - Building SaaS & AI tools for agencies." />
+    <meta name="description" content="CEOL is a software company that builds powerful SaaS and AI solutions designed to simplify complex work, streamline collaboration, and accelerate decision-making." />
+    
+    <!-- ============================================ -->
+    <!-- KEYWORDS (For Search Engine Understanding)    -->
+    <!-- ============================================ -->
+    <meta name="keywords" content="CEOL, SaaS, AI tools, software for agencies, agency automation, business tools, productivity, workflow automation, AI solutions, agency management, collaboration tools, business intelligence" />
+    
+    <!-- ============================================ -->
+    <!-- AUTHOR & ROBOTS                              -->
+    <!-- ============================================ -->
+    <meta name="author" content="CEOL" />
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large" />
+    <meta name="googlebot" content="index, follow" />
+    <meta name="bingbot" content="index, follow" />
+    
+    <!-- ============================================ -->
+    <!-- LANGUAGE & GEO TARGETING                     -->
+    <!-- ============================================ -->
+    <meta name="language" content="English" />
+    <meta name="geo.region" content="PK" />
+    <meta name="geo.placename" content="Pakistan" />
+    <meta name="geo.position" content="30.3753;69.3451" />
+    <meta name="ICBM" content="30.3753, 69.3451" />
+    
+    <!-- ============================================ -->
+    <!-- FAVICON (All Devices)                         -->
+    <!-- ============================================ -->
+    <!-- Primary Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    
+    <!-- Apple Touch Icon (iOS) -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
     
     <!-- Android Chrome Icons -->
-    <link rel="icon" type="image/png" sizes="192x192" href="/android-chrome-192x192.png">
-    <link rel="icon" type="image/png" sizes="512x512" href="/android-chrome-512x512.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/android-chrome-192x192.png" />
+    <link rel="icon" type="image/png" sizes="512x512" href="/android-chrome-512x512.png" />
     
     <!-- Web App Manifest -->
-    <link rel="manifest" href="/site.webmanifest">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CEOL</title>
+    <link rel="manifest" href="/site.webmanifest" />
+    
+    <!-- ============================================ -->
+    <!-- OPEN GRAPH (Social Media Sharing)            -->
+    <!-- ============================================ -->
+    <meta property="og:title" content="CEOL - Building SaaS & AI tools for agencies." />
+    <meta property="og:description" content="CEOL builds powerful SaaS and AI solutions that simplify complex work, streamline collaboration, and accelerate decision-making for agencies and teams worldwide." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://ceol.com" />
+    <meta property="og:image" content="https://ceol.com/og-image.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:site_name" content="CEOL" />
+    <meta property="og:locale" content="en_US" />
+    
+    <!-- ============================================ -->
+    <!-- TWITTER CARD (Twitter/X Sharing)             -->
+    <!-- ============================================ -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="CEOL - SaaS & AI Tools for Agencies" />
+    <meta name="twitter:description" content="CEOL is a software company that builds powerful SaaS and AI solutions designed to simplify complex work, streamline collaboration, and accelerate decision-making." />
+
+    <meta name="twitter:site" content="@ceol" />
+    <meta name="twitter:creator" content="@ceol" />
+    
+    <!-- ============================================ -->
+    <!-- CANONICAL URL (Prevent Duplicate Content)    -->
+    <!-- ============================================ -->
+    <link rel="canonical" href="https://ceol.site/" />
+    
+    <!-- ============================================ -->
+    <!-- ALTERNATE LANGUAGE VERSIONS                  -->
+    <!-- ============================================ -->
+    <link rel="alternate" href="https://ceol.site/" hreflang="en" />
+    <link rel="alternate" href="https://ceol.site/" hreflang="x-default" />
+    
+    <!-- ============================================ -->
+    <!-- PRELOAD & PERFORMANCE OPTIMIZATION          -->
+    <!-- ============================================ -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preload" href="/logo.png" as="image" />
+    <link rel="dns-prefetch" href="//fonts.googleapis.com" />
+    <link rel="dns-prefetch" href="//fonts.gstatic.com" />
+    
+    <!-- ============================================ -->
+    <!-- SCHEMA MARKUP (JSON-LD for AEO/GEO)         -->
+    <!-- ============================================ -->
+    
+    <!-- Organization Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "CEOL",
+      "description": "CEOL is a software company that builds powerful SaaS and AI solutions designed to simplify complex work, streamline collaboration, and accelerate decision-making.",
+      "url": "https://ceol.site",
+      "logo": "https://ceol.site/logo.png",
+      "email": "write2ceol@gmail.com",
+      "telephone": "+923191515848",
+      "foundingDate": "2026",
+      "slogan": "Building SaaS & AI tools for agencies",
+      "keywords": "SaaS, AI tools, software for agencies, agency automation, business tools, productivity, workflow automation",
+      "sameAs": [
+        "https://www.facebook.com/people/CEOL/61585080664214/",
+        "https://www.instagram.com/ceol.global/",
+        "https://www.producthunt.com/@ceol",
+        "https://www.threads.com/@ceol.global",
+        "https://www.tiktok.com/@ceol.global"
+      ],
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "email": "write2ceol@gmail.com",
+        "telephone": "+923191515848",
+        "contactType": "sales"
+      }
+    }
+    </script>
+    
+    <!-- Product Schema -->
+    <!-- <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Product",
+      "name": "CEOL Platform",
+      "description": "A revolutionary SaaS solution designed to transform how agencies and teams operate. Streamline workflows, automate tasks, and make data-driven decisions with our intelligent platform.",
+      "brand": {
+        "@type": "Brand",
+        "name": "CEOL"
+      },
+      "offers": {
+        "@type": "Offer",
+        "price": "0.00",
+        "priceCurrency": "USD",
+        "availability": "https://schema.org/PreOrder"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.8",
+        "reviewCount": "0",
+        "bestRating": "5"
+      }
+    }
+    </script> -->
+    
+    <!-- Website Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "CEOL",
+      "url": "https://ceol.site",
+      "description": "CEOL is a software company that builds powerful SaaS and AI solutions designed to simplify complex work, streamline collaboration, and accelerate decision-making.",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://ceol.com/search?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    }
+    </script> 
+    
+    <!-- Breadcrumb Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://ceol.site"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Products",
+          "item": "https://ceol.com/#products"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Contact",
+          "item": "https://ceol.com/#contact"
+        }
+      ]
+    }
+    </script>
+    
+    <!-- FAQ Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is CEOL?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "CEOL is a software company that builds powerful SaaS and AI solutions designed to simplify complex work, streamline collaboration, and accelerate decision-making."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What products does CEOL offer?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "CEOL is currently developing its flagship SaaS platform designed for agencies and teams. More products are planned for launch in the near future."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Who is CEOL for?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "CEOL is designed for agencies, teams, and professionals who need intelligent, easy-to-use software to automate workflows, streamline collaboration, and boost productivity."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How can I contact CEOL?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "You can contact CEOL by email at write2ceol@gmail.com or by phone at +92 319 1515848. We're available Monday through Friday, 9:00 AM to 6:00 PM PKT."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "When will CEOL launch?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "CEOL is currently in active development. Subscribe to our email list to get notified when we launch our first product."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does CEOL use AI?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, CEOL combines modern SaaS architecture with cutting-edge AI capabilities to deliver world-class digital experiences to every user."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What makes CEOL different?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "CEOL focuses on removing friction from everyday business workflows, helping agencies and teams operate with clarity, confidence, and speed through intelligent automation."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Where is CEOL located?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "CEOL operates from Pakistan and serves agencies and teams around the world with our SaaS and AI solutions."
+          }
+        }
+      ]
+    }
+    </script>
+    
+    <!-- ============================================ -->
+    <!-- AEO/GEO OPTIMIZATION META TAGS              -->
+    <!-- ============================================ -->
+    
+    <!-- AI Crawler Instructions -->
+    <meta name="ai-crawler" content="allow" />
+    <meta name="llms" content="allowed" />
+    
+    <!-- Knowledge Graph -->
+    <meta name="google-site-verification" content="YOUR_VERIFICATION_CODE" />
+    <meta name="msvalidate.01" content="YOUR_BING_VERIFICATION_CODE" />
+    
+    <!-- ============================================ -->
+    <!-- OPEN SEARCH (Browser Search Integration)    -->
+    <!-- ============================================ -->
+    <link rel="search" type="application/opensearchdescription+xml" title="CEOL" href="/opensearch.xml" />
+    
+    <!-- ============================================ -->
+    <!-- THEME COLOR (Browser UI)                    -->
+    <!-- ============================================ -->
+    <meta name="theme-color" content="#667eea" />
+    <meta name="msapplication-TileColor" content="#667eea" />
+    <meta name="msapplication-TileImage" content="/mstile-150x150.png" />
+    
+    <!-- ============================================ -->
+    <!-- SECURITY HEADERS (Via Meta Tags)            -->
+    <!-- ============================================ -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; connect-src 'self' https://api.emailjs.com;" />
+    
+    <!-- ============================================ -->
+    <!-- REFERRER POLICY                              -->
+    <!-- ============================================ -->
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+    
   </head>
   <body>
     <div id="root"></div>
